@@ -1,5 +1,6 @@
 package array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayAssignment {
@@ -12,6 +13,7 @@ static Scanner s = new Scanner(System.in);
  		for(int i=1;i<a.length;i++) {
  			a[i] = s.nextInt();         //pushing the elements in array
  		}
+ 		Arrays.sort(a, 1,(a.length));                
 		System.out.println("Elements are: ");
  		for(int i=1;i<a.length;i++){
  			System.out.println("Elements in " +i+ " Index " + a[i]);
